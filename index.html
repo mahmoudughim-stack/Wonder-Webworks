@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- Deklarerar dokumenttypen som HTML5 och hjälper webbläsaren att tolka sidan korrekt. Detta är alltid det första elementet i ett HTML-dokument. -->
+<html lang="sv">
+  <!-- Anger att webbsidans språk är svenska -->
+  <head>
+    <!-- Huvudsektionen som innehåller metadata om sidan -->
+    <meta charset="UTF-8" />
+    <!-- UTF-8 är en standard som gör att alla bokstäver och symboler visas korrekt – svenska bokstäver (å, ä, ö), arabiska tecken, emojis osv. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Gör sidan responsiv för olika skärmstorlekar -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Kopplar sidan till en extern CSS-fil för styling -->
+    <title>Förtrollad Webbyrå</title>
+    <!-- Visar sidans titel i webbläsarens flik -->
+  </head>
+
+  <body>
+    <!-- Huvudsektionen som innehåller allt synligt innehåll på sidan -->
+    <a href="#content">Hoppa till innehållet</a>
+    <!-- Skapar en länk som hoppar direkt till innehållssektionen på sidan -->
+
+    <header class="hero">
+      <!-- Definierar en sidhuvudssektion med klassen 'hero' för framträdande innehåll -->
+      <div class="hero-text">
+        <!-- Skapar en container för textinnehållet inom hero-sektionen -->
+        <h1>Förtrollad Webbyrå</h1>
+        <p>Vi skapar magiska digitala upplevelser som stannar kvar</p>
+      </div>
+    </header>
+
+    <main id="content">
+      <!-- Definierar huvudsektionen på sidan som innehåller sidans huvud innehåll -->
+      <section class="om-oss">
+        <!-- används för att markera en självständig sektion av innehåll med ett specifikt ämne -->
+        <div class="om-oss-text">
+          <!-- <div> används för att gruppera element utan någon semantisk betydelse -->
+          <h2>OM OSS</h2>
+          <p>
+            Välkommen till Förtrollad Webbyrå! "Vi är ett litet team, och vi
+            älskar att göra snygga och enkla hemsidor. Vårt mål är superenkelt:
+            vi vill att du ska synas online! Vi är stenhårda på att designen
+            måste vara tydlig och funka perfekt oavsett om folk kollar på
+            mobilen eller datorn. Vi gör allt det här tillsammans med dig, för
+            vi vill att både du och de som besöker din sida ska känna sig nöjda.
+            Räkna med att vi är personliga! Vi är inte bara en leverantör - vi
+            är din partner, och din åsikt är alltid viktigast för oss."
+          </p>
+        </div>
+        <div class="om-oss-image">
+          <img
+            src="image/fly.png"
+            alt="person svävar ovanför marken med lysande neoneffekter under skorna som symbol för att synas online."
+          />
+        </div>
+      </section>
+
+      <section class="Våra-tjänster">
+        <h2>Våra tjänster</h2>
+        <div class="tjänster-grid">
+          <div class="Våra-tjänster-box">
+            <h3>Webbdesign & utveckling</h3>
+            <p>
+              Vi skapar snygga, responsiva webbplatser som fungerar på alla
+              enheter.
+            </p>
+          </div>
+
+          <div class="Våra-tjänster-box">
+            <h3>Användarvänlig design (UX)</h3>
+            <p>
+              Vi ser till att din webbplats är logisk och enkel att använda.
+            </p>
+          </div>
+
+          <div class="Våra-tjänster-box">
+            <h3>Sökoptimering (SEO)</h3>
+            <p>
+              Vi hjälper din webbplats att synas högre upp i sökmotorer och nå
+              fler kunder.
+            </p>
+          </div>
+
+          <div class="Våra-tjänster-box">
+            <h3>Support & underhåll</h3>
+            <p>Vi erbjuder hjälp med uppdateringar och tekniskt stöd.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!-- Skapar sidfotsektionen på sidan med klassen 'footer' -->
+      <div class="kontakt">
+        <a href="kontakt.html">
+          <!-- Skapar en länk till sidan 'kontakt.html' -->
+          <span class="bold-text"> Kontakta oss 📞</span>
+          <!-- Markerar texten "Kontakta oss 📞" som kopplar den till CSS-class som styr dess stil, i det här tillfälle gör texten fet genom .bold-text {font-weight: bold;} -->
+        </a>
+      </div>
+      <div class="accessibility-link">
+        <a href="accessibility.html">
+          <span class="bold-text"> Tillgänglighet ⚠️</span></a
+        >
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/"
+          ><img src="icons/facebook.png" alt="Besök oss på Facebook"
+        /></a>
+        <!-- Skapar en länk som innehåller en bild-ikon för Facebook och visar alt-texten "Besök oss på Facebook" -->
+        <a href="https://www.instagram.com/"
+          ><img src="icons/instagram.png" alt="Besök oss på Instagram"
+        /></a>
+        <a href="https://www.linkedin.com/"
+          ><img src="icons/linkedin.png" alt="Besök oss på LinkedIn"
+        /></a>
+        <a href="https://www.behance.net"
+          ><img src="icons/Behance.png" alt="Besök oss på Behance"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

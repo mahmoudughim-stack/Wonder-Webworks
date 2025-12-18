@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kontakta oss</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Hoppa till innehållet</a>
+
+    <main id="main" class="kontakt-hero-pic">
+      <form class="kontakta-oss-form" action="#">
+        <!-- Skapar ett kontaktformulär med klassen 'kontakta-oss-form'; action="#" betyder att formuläret inte skickas någonstans ännu -->
+        <h1>Kontakta oss</h1>
+
+        <div class="input-box">
+          <label for="namn">Namn:</label>
+          <!-- Skapar en etikett för ett formulärfält med id "namn" som beskriver att användaren ska fylla i sitt namn -->
+          <input
+            type="text"
+            id="namn"
+            name="namn"
+            placeholder="Ditt namn"
+            required
+          />
+          <!-- type="text"              Anger att fältet är ett textfält där användaren kan skriva text 
+               id="namn"                Sätter ett unikt identifieringsnamn för fältet som kan refereras i label eller JavaScript 
+               name="namn"              Namnet som används när formulärdata skickas till servern 
+               placeholder="Ditt namn"  Visar grå text i fältet som hjälper användaren att veta vad som ska fyllas i 
+               required                 Gör fältet obligatoriskt, formuläret kan inte skickas utan att detta fylls i 
+          -->
+        </div>
+
+        <div class="input-box">
+          <label for="email">E-post:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="kallekarelsson@exempel.com"
+            required
+          />
+        </div>
+
+        <div class="input-box">
+          <label for="telefon">Telefon:</label>
+          <input
+            type="tel"
+            id="telefon"
+            name="telefon"
+            placeholder="07x-xxx xx xx"
+          />
+        </div>
+
+        <div class="input-box">
+          <label for="meddelande">Ditt meddelande:</label>
+          <textarea
+            id="meddelande"
+            name="meddelande"
+            rows="5"
+            placeholder="Har du en idé som du vill förverkliga tillsammans med oss?"
+            required
+          ></textarea>
+          <!-- Skapar ett flerradigt textfält (textarea) med id och namn "meddelande", visar platshållartext, har 5 rader och är obligatoriskt att fylla i -->
+        </div>
+
+        <button type="submit">Skicka meddelande</button>
+        <!-- Skapar en knapp som skickar formuläret när den klickas, med texten "Skicka meddelande" -->
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="Förtrollad-Webbyrå">
+        <a href="index.html">
+          <span class="bold-text">Förtrollad Webbyrå</span>
+        </a>
+      </div>
+      <div class="accessibility-link">
+        <a href="accessibility.html">
+          <span class="bold-text"> Tillgänglighet ⚠️</span></a
+        >
+     </div>
+      <div class="social">
+        <a href="https://www.facebook.com/"
+          ><img src="icons/facebook.png" alt="Besök oss på Facebook"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="icons/instagram.png" alt="Besök oss på Instagram"
+        /></a>
+        <a href="https://www.linkedin.com/"
+          ><img src="icons/linkedin.png" alt="Besök oss på LinkedIn"
+        /></a>
+        <a href="https://www.behance.net"
+          ><img src="icons/Behance.png" alt="Besök oss på Behance"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
